@@ -7,9 +7,9 @@ const Admin = require("../middleware/admin");
 
 router.post(
   "/registerRole",
-  // Auth,
-  // ValidateUser,
-  // Admin,
+  Auth,
+  ValidateUser,
+  Admin,
   RoleController.registerRole
 );
 router.get("/listRole", Auth, ValidateUser, Admin, RoleController.listRole);
